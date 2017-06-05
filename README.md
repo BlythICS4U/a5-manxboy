@@ -23,9 +23,7 @@ You have been provided with a Person class from an earlier exercise.  Within the
 
 ### Problem 4
 
-What follows is a description of a sorting algorithm.  Implement the described algorithm, adding sufficient JUnit tests to ensure correctness.  Also - state the runtime complexity of the algorithm in big-O notation (you can include it as part of javadoc comments above the method signature).
-
-Algorithm description:
+What follows is a description of a sorting algorithm.
 
 Imagine you have a shuffled deck of cards (a single suit only), face down on a table.  You pick up cards, one at a time, and place them in your hand.  When you place the card in your hand, you place it in the sorted position.  For example,
 * You pick up the 5H first, and up it in you hand
@@ -35,3 +33,6 @@ Imagine you have a shuffled deck of cards (a single suit only), face down on a t
 
 If we apply this algorithm more generally - sorting an array of integers would look something like this:
 
+<img src="https://github.com/BlythICS4U/a5/blob/master/sortingAlgorithm.png" width="250" height="400"/>
+
+Implement the described algorithm, adding sufficient JUnit tests to ensure correctness.  Also - state the runtime complexity of the algorithm in big-O notation (you can include it as part of javadoc comments above the method signature).
