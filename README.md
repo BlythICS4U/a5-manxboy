@@ -21,24 +21,20 @@ Implement this recursive algorithm and provide the necessary JUnit tests to ensu
 
 ### Problem 3
 
-You have been provided with a Person class from an earlier exercise.  Within the Person class is an *id* field.  Update the Person class to implement the Comparable interface - using the *id* field to enforce the natural ordering.  After making this update, implement a version of Selection sort which sorts an array of Person objects.  Write the necessary JUnit tests to ensure correctness.
+You have been provided with a Person class from an earlier exercise.  Within the Person class is an *id* field.  Update the Person class to implement the Comparable interface - using the *id* field to enforce the natural ordering.  After making this update, implement a version of Insertion sort which sorts an array of Person objects.  Write the necessary JUnit tests to ensure correctness.
 
 ### Problem 4
 
 What follows is a description of a sorting algorithm.
 
-Imagine you have a shuffled deck of cards (a single suit only), face down on a table.  You pick up cards, one at a time, and place them in your hand.  When you place the card in your hand, you place it in the sorted position.  For example,
-* You pick up the 5H first, and up it in you hand
-* Next, you pick up the 10H, and put it in your hand, to the right of the 5H
-* Next, you pick up the 7H, and put it in your hand, in between the 5H and 10H
-* etc. - until the entire deck is in your hand - sorted
+Imagine you are picking flowers from a greenhouse.  You start with an empty cart and you pick flowers - one at a time.  You start by picking the best available flower and place it closest you in the cart.  Then, you pick the next best flower and place it in your cart, next to the first flower.  You repeat this process until you have picked all of the flowers you need.  You now have a cart of flowers, sorted from best to worst.
 
-If we apply this algorithm more generally - sorting an array of integers would look something like this:
+If we apply this algorithm more generally, you could sort an array of integers by repeatedly picking the maximum value and placing it at the end of the sorted section of the array.  It would look like this:
 
-<img src="https://github.com/BlythICS4U/a5/blob/master/sortingAlgorithm.png" width="250" height="400"/>
+<img src="https://github.com/BlythICS4U/a5/blob/master/sortingAlgorithm.png" width="250" height="450"/>
 
-Implement the described algorithm, adding sufficient JUnit tests to ensure correctness.  Also - in a javadoc commnt above the method, document the following:
+Implement the described algorithm, adding sufficient JUnit tests to ensure correctness.  Also - in a javadoc comment above the method, document the following:
 * State the runtime complexity of the algorithm in big-O notation
-* Compare this algorithm to selection sort
-  * describe an array which would perform better using your algorithm (over selection sort)
-  * describe an array which would perform better using selection sort (over your algorithm)
+* Compare this algorithm to insertion sort
+  * describe an array which would perform better using your algorithm (over insertion sort)
+  * describe an array which would perform better using insertion sort (over your algorithm)
