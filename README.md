@@ -6,6 +6,21 @@ A separate NetBeans project has been provided for each assignment question. Befo
 
 A number of methods have been implemented in the accompanying NetBeans project.  In the javadoc comments above each method, state the runtime complexity of the method (using big-O notation).
 
+Example
+```
+    /**
+     * looping0
+     * RUNTIME COMPLEXITY IS: O(n)
+     * 
+     * @param n
+     */
+    public void looping0(int n) {
+        for (int i = 1; i <= n; i++) {
+            System.out.println("hi");
+        }
+    }
+```
+
 ### Problem 2
 
 There is a divisibility rule in mathematics which states: an integer is divisible by 3 if the sum of its digits is divisible by 3.  For example,
