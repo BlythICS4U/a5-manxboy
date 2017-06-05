@@ -29,7 +29,7 @@ What follows is a description of a sorting algorithm.
 
 Imagine you are picking flowers from a greenhouse.  You start with an empty cart and you pick flowers - one at a time.  You start by picking the best available flower and place it closest you in the cart.  Then, you pick the next best flower and place it in your cart, next to the first flower.  You repeat this process until you have picked all of the flowers you need.  You now have a cart of flowers, sorted from best to worst.
 
-If we apply this algorithm more generally, you could sort an array of integers by repeatedly picking the maximum value and placing it at the end of the sorted section of the array.  It would look like this:
+If we apply this algorithm more generally, you could sort an array of integers by repeatedly picking the maximum value and placing it at the end of the sorted section of the array.  Placing the max value in its sorted spot is accomplished by swapping it with the value at the end of the sorted section of the array.  It would look like this:
 
 <img src="https://github.com/BlythICS4U/a5/blob/master/sortingAlgorithm.png" width="250" height="450"/>
 
