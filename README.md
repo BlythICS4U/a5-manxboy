@@ -4,6 +4,8 @@ A separate NetBeans project has been provided for each assignment question. Befo
 
 ### Problem 1
 
+A number of methods have been implemented in the accompanying NetBeans project.  In the javadoc comments above each method, state the runtime complexity of the method (using big-O notation).
+
 ### Problem 2
 
 There is a divisibility rule in mathematics which states: an integer is divisible by 3 if the sum of its digits is divisible by 3.  For example,
@@ -35,4 +37,8 @@ If we apply this algorithm more generally - sorting an array of integers would l
 
 <img src="https://github.com/BlythICS4U/a5/blob/master/sortingAlgorithm.png" width="250" height="400"/>
 
-Implement the described algorithm, adding sufficient JUnit tests to ensure correctness.  Also - state the runtime complexity of the algorithm in big-O notation (you can include it as part of javadoc comments above the method signature).
+Implement the described algorithm, adding sufficient JUnit tests to ensure correctness.  Also - in a javadoc commnt above the method, document the following:
+* State the runtime complexity of the algorithm in big-O notation
+* Compare this algorithm to selection sort
+  * describe an array which would perform better using your algorithm (over selection sort)
+  * describe an array which would perform better using selection sort (over your algorithm)
