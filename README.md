@@ -27,7 +27,7 @@ There is a divisibility rule in mathematics which states: an integer is divisibl
 
 * Is 126 divisible by 3?  Just add the digits 1 + 2 + 6 = 9.  Since 9 is divisible by 3, so is 126.
 
-* Is 49867285022465 divisible by 3?  Sum of the digits is 69.
+* Is 49867285122465 divisible by 3?  Sum of the digits is 69.
   * Is 69 divisible by 3?  Sum of the digits is 15.
     * Is 15 divisible by 3?  Sum of the digits is 6.
       * Is 6 divisible by 3?  Yes, since it’s just 1 digit, and it’s 3 or 6 or 9.
