@@ -53,3 +53,15 @@ Implement the described algorithm, adding sufficient JUnit tests to ensure corre
 * Compare this algorithm to insertion sort
   * describe an array which would perform better using your algorithm (over insertion sort)
   * describe an array which would perform better using insertion sort (over your algorithm)
+
+### Problem 5
+
+You are given a file named "wordList.txt" (or "wordListWindows.txt" for Windows users).  The file contains a sorted list of 100,000 words, all lower case, with one word on each line.  Write a program that does the following:
+* Read the contents of the file and store the words in a string array
+* As the words are being loading into the array, have your program separately track the array indicies for the first word of each letter of the alphabet.  I.e. the first "a" word is at index 0, the first "b" word is at index 2045, the first "c" word is at index 4567 etc.
+* Once the above state has been set up, write a modified version of binary search
+    * Look at the first letter of the word to search for
+    * Get the index of the first word in the string array that has the same first letter
+    * Perform standard binary search with the low index being the value from the previous step, and the high index being the index of the next first letter
+        * I.e if searching for "bingo", your low index would be the first "b" word and your high index would be your first "c" word
+* Write a series of unit tests to ensure correctness.  Use the @BeforeClass annotation so that you don't read in the word list before each test (i.e. set up the string array once, then run a series of search tests to ensure correctness).  Pay special attention to edge cases.
