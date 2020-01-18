@@ -6,7 +6,7 @@ package problem3;
  * 
  * @author cgallinaro
  */
-public class Person {
+public class Person implements Comparable<Person> {
     
     private final String id;  // School identifier
     
@@ -73,5 +73,66 @@ public class Person {
     public void setAge(int age) {
         this.age = age;
     }
+
+    /**
+     * Compares this Person to another, following the Comparable conventions
+     * Uses the inbuilt String comparison method to compare the ids of the Person
+     * 
+     * @see java.lang.Comparable#compareTo(java.lang.Object)
+     * 
+     * @param p
+     * @return 
+     */
+    @Override
+    public int compareTo(Person p) {
+        return this.id.compareTo(p.id);
+    }
+    
+    @Override
+    /**
+     * Added to maintain contract for compareTo, as most sorters expect that for objects
+     * a.compareTo(b) == 0, a.equals(b) == true
+     * 
+     * @see java.lang.Object#equals(Object)
+     * 
+     * @returns true if the Object is instanceof Person and if the id matches, else returns false
+     */
+    public boolean equals(Object o) {
+        return o instanceof Person && ((Person)o).id.equals(id);
+    }
+
+    @Override
+    /**
+     * Added to maintain contract for equals
+     * @see java.lang.Object#hashCode()
+     * 
+     * @returns Hashcode of object
+     */
+    public int hashCode() {
+        return id.hashCode();
+    }
+    
+    /**
+     * 
+     * @param array the array to sort
+     */
+    public static void sort(Person[] array) {
+        for (int i = 0; i < array.length; i++) {
+            
+            Person current = array[i];
+            
+            int j = i;
+            
+            while (j > 0 && (array[j - 1].compareTo(current) > 0)) {
+                array[j] = array[j - 1];
+                j--;
+            }
+            
+            array[j] = current;
+            
+        }
+    } 
+    
+    
     
 }
